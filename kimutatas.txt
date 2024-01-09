@@ -1,0 +1,1 @@
+Tízzel osztható számok száma: 1
