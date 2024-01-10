@@ -23,6 +23,7 @@ import random
 
 def szam_generalas():
     lista=[]
+    print(f"\t", end="")
     for i in range(0,15,1):
         szam=random.randint(-90,500)
         lista.append(szam)
@@ -42,9 +43,9 @@ def oszthatoak_szama(lista):
     return tizzel_oszthato
 
 def konzolra_ir(tizzel_oszthato):
-    print(f"Tízzel osztható számok száma: {tizzel_oszthato}")
+    print(f"\tTízzel osztható számok száma: {tizzel_oszthato}")
 
 def fajl_ir(tizzel_oszthato):
     fajl = open("kimutatas.txt", "w", encoding="utf-8")
-    fajl.write(f"Tízzel osztható számok száma: {tizzel_oszthato}")
+    fajl.write(f"II/F:\tTízzel osztható számok száma: {tizzel_oszthato}")
     fajl.close()

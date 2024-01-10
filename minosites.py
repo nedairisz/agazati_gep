@@ -19,13 +19,13 @@ Feltételezzük, hogy csak egész számokat adnak meg. (4p + 1p)
 """
 
 def bekeres():
-    muzeum:str= str(input("Múzeum neve: "))
-    latogato:str=str(input("Látogatóneve: "))
-    ertekeles:int=int(input("Értékelés (1-20): "))
+    muzeum:str= str(input("\tMúzeum neve: "))
+    latogato:str=str(input("\tLátogatóneve: "))
+    ertekeles:int=int(input("\tÉrtékelés (1-20): "))
     print("I/B:")
     if ertekeles<1:
-        print("Az értékelés nem lehet negatív vagy 0!")
+        print("\tAz értékelés nem lehet negatív vagy 0!")
     elif ertekeles>20:
-        print("20 pont feletti értékelés nem elfogadható!")
+        print("\t20 pont feletti értékelés nem elfogadható!")
     else:
-        print("Köszönjük az értékelést!")
+        print("\tKöszönjük az értékelést!")

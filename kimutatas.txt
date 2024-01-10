@@ -1,1 +1,1 @@
-Tízzel osztható számok száma: 1
+II/F:	Tízzel osztható számok száma: 3

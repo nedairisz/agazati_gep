@@ -55,24 +55,22 @@ def gepek_szama(lista):
     return szamlalo
 
 def atlag(lista):
-    terem_szamlalo:int=0
-    id_osszeg:int=0
-    for i in range(0, len(lista), 1):
+    terem_szamlalo=0
+    ip_gyujto=0
+    for i in range(0,len(lista), 1):
         terem= int(lista[i].hely.strip("T"))
         if terem%2==0:
             terem_szamlalo+=1
-            id_osszeg+= lista[i].id
-    azonosito_atlag=id_osszeg/terem_szamlalo
+            ip_gyujto+=lista[i].id
+    azonosito_atlag=ip_gyujto/terem_szamlalo
     return azonosito_atlag
 
 def legkisebb(lista):
-    legkisebb_id=100
-    legkisebb_hely_index=0
-    for i in range(0, len(lista), 1):
+    legkisebb_id=0
+    helye=0
+    for i in range(0,len(lista),1):
         if lista[i].tipus=="asztali":
-            if legkisebb_id > lista[i].id:
-                legkisebb_id = lista[i].id
-                legkisebb_hely_index= (lista[i].hely)
-
-    print(f"A legkisebb asztali gép azonosítója: {legkisebb_id}, helye: {legkisebb_hely_index}.")
-
+            if lista[legkisebb_id].id > lista[i].id:
+                legkisebb_id=lista[i].id
+                helye=lista[i].hely
+    print(f"\tA legkisebb asztali gép azonosítója: {legkisebb_id}, helye: {helye}.")
